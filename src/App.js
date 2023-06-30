@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import {Route, BrowserRouter as Router } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.css';
@@ -19,23 +19,25 @@ function App() {
   return (
     <div className="App">
       <Menu></Menu>
-   
-     <Router>
-       <Route exact path="/" component={Inicio}></Route>
-      <Route path="/ListarCurso" component={ListarCurso}></Route>
-      <Route path="/CrearCurso" component={CrearCurso}></Route>
+      <body>
+        <Router>
+        <Route exact path="/" component={Inicio}></Route>
+        <Route path="/ListarCurso" component={ListarCurso}></Route>
+        <Route path="/CrearCurso" component={CrearCurso}></Route>
 
-      <Route path="/ListarEstudiantes" component={ListarEstudiantes}></Route>
-      <Route path="/CrearEstudiante" component={CrearEstudiante}></Route>
+        <Route path="/ListarEstudiantes" component={ListarEstudiantes}></Route>
+        <Route path="/CrearEstudiante" component={CrearEstudiante}></Route>
 
-      <Route path="/ListarProfesor" component={ListarProfesor}></Route>
-      <Route path="/CrearProfesor" component={CrearProfesor}></Route>
+        <Route path="/ListarProfesor" component={ListarProfesor}></Route>
+        <Route path="/CrearProfesor" component={CrearProfesor}></Route>
 
-      <Route path="/ListarGrupos" component={ListarGrupos}></Route>
-      <Route path="/CrearGrupo" component={CrearGrupo}></Route>
-      <Route></Route> 
+        <Route path="/ListarGrupos" component={ListarGrupos}></Route>
+        <Route path="/CrearGrupo" component={CrearGrupo}></Route>
+        <Route></Route> 
 
-      </Router>
+        </Router>
+      </body>
+     
       <Footer></Footer>
     </div>
   );

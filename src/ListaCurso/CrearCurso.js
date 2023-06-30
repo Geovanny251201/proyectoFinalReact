@@ -46,7 +46,7 @@ class CrearCurso  extends React.Component {
     render() { 
         const {nombre,descripcion, tiempo,datosCargados}=this.state;
         return (
-            <div style={{ display: "flex", justifyContent: "center" }}>
+            <div style={{ display: "flex", justifyContent: "center" }} className='m-5'>
             <form id="formulario" onSubmit={this.enviarDatos} style={{ width: "300px" }}>
                 <div className="form-group">
                     <label htmlFor="nombre">Nombre</label>

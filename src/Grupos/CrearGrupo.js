@@ -37,28 +37,14 @@ class CrearGrupo extends React.Component {
   render() {
     const { id, nombre } = this.state;
     return (
-      <div style={{ display: "flex", justifyContent: "center" }}>
+      <div style={{ display: "flex", justifyContent: "center" }} className='m-5'>
         <form
           id="formulario"
           onSubmit={this.enviarDatos}
           style={{ width: "300px" }}
         >
           <div className="form-group">
-            <label htmlFor="id">ID</label>
-            <input
-              type="text"
-              className="form-control form-control-sm"
-              name="id"
-              id="id"
-              placeholder="Ingrese el ID"
-              onChange={this.cambioValor}
-              value={id}
-              required
-            />
-            <small className="form-text text-muted">Ingrese el ID</small>
-          </div>
-          <div className="form-group">
-            <label htmlFor="nombre">Nombre</label>
+            <label htmlFor="nombre">Ingrese el nombre</label>
             <input
               type="text"
               className="form-control form-control-sm"
@@ -69,7 +55,6 @@ class CrearGrupo extends React.Component {
               value={nombre}
               required
             />
-            <small className="form-text text-muted">Ingrese su nombre</small>
           </div>
           <div className="form-group">
             <button type="submit" className="btn btn-success">

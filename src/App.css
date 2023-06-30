@@ -39,8 +39,35 @@
 root{
   min-height: 100vh;
 }
+
+
+/**********************cambios de apariencia*************************/
 .footer {
-  position: absolute;
+  margin-top: 20px;  
   bottom: 0;
   width: 100%;
+}
+.right-align{
+  justify-content: flex-end;
+}
+
+h1{
+  margin-top: 20px;
+}
+
+nav a, ul{
+  padding: 0 30px;
+}
+
+.table-responsive{
+  max-height: 500px;
+  margin: 0 20px ;
+}
+
+.form-group{
+  color-scheme: dark;
+}
+
+.btn{
+  margin: 10px;
 }

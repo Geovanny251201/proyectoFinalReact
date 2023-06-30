@@ -76,7 +76,6 @@ class CrearEstudiante extends React.Component {
 
   render() {
     const {
-      id,
       cedula,
       correoelectronico,
       telefono,
@@ -93,7 +92,7 @@ class CrearEstudiante extends React.Component {
     } = this.state;
 
     return (
-        <div style={{ display: "flex", justifyContent: "center" }}>
+        <div style={{ display: "flex", justifyContent: "center" }} className='m-5'>
         <form
           id="formulario"
           onSubmit={this.enviarDatos}
@@ -101,22 +100,9 @@ class CrearEstudiante extends React.Component {
         >
           <div className="row">
             <div className="col">
+              
               <div className="form-group">
-                <label htmlFor="id">ID</label>
-                <input
-                  type="text"
-                  className="form-control form-control-sm"
-                  name="id"
-                  id="id"
-                  placeholder="Ingrese el ID"
-                  onChange={this.cambioValor}
-                  value={id}
-                  required
-                />
-                <small className="form-text text-muted">Ingrese el ID</small>
-              </div>
-              <div className="form-group">
-                <label htmlFor="cedula">Cédula</label>
+                <label htmlFor="cedula">Ingrese su cédula</label>
                 <input
                   type="text"
                   className="form-control form-control-sm"
@@ -127,12 +113,9 @@ class CrearEstudiante extends React.Component {
                   value={cedula}
                   required
                 />
-                <small className="form-text text-muted">
-                  Ingrese su cédula
-                </small>
               </div>
               <div className="form-group">
-                <label htmlFor="correoelectronico">Correo Electrónico</label>
+                <label htmlFor="correoelectronico">Ingrese su correo electrónico</label>
                 <input
                   type="email"
                   className="form-control form-control-sm"
@@ -143,12 +126,9 @@ class CrearEstudiante extends React.Component {
                   value={correoelectronico}
                   required
                 />
-                <small className="form-text text-muted">
-                  Ingrese su correo electrónico
-                </small>
               </div>
               <div className="form-group">
-                <label htmlFor="telefono">Teléfono</label>
+                <label htmlFor="telefono">Ingrese su teléfono</label>
                 <input
                   type="text"
                   className="form-control form-control-sm"
@@ -159,12 +139,9 @@ class CrearEstudiante extends React.Component {
                   value={telefono}
                   required
                 />
-                <small className="form-text text-muted">
-                  Ingrese su teléfono
-                </small>
               </div>
               <div className="form-group">
-                <label htmlFor="telefonocelular">Teléfono Celular</label>
+                <label htmlFor="telefonocelular">Ingrese su teléfono celular</label>
                 <input
                   type="text"
                   className="form-control form-control-sm"
@@ -175,9 +152,6 @@ class CrearEstudiante extends React.Component {
                   value={telefonocelular}
                   required
                 />
-                <small className="form-text text-muted">
-                  Ingrese su teléfono celular
-                </small>
               </div>
             </div>
             <div className="col">
@@ -209,7 +183,7 @@ class CrearEstudiante extends React.Component {
                 </select>
               </div>
               <div className="form-group">
-                <label htmlFor="direccion">Dirección</label>
+                <label htmlFor="direccion">Ingrese su dirección</label>
                 <input
                   type="text"
                   className="form-control form-control-sm"
@@ -220,12 +194,9 @@ class CrearEstudiante extends React.Component {
                   value={direccion}
                   required
                 />
-                <small className="form-text text-muted">
-                  Ingrese su dirección
-                </small>
               </div>
               <div className="form-group">
-                <label htmlFor="nombre">Nombre</label>
+                <label htmlFor="nombre">Ingrese su nombre</label>
                 <input
                   type="text"
                   className="form-control form-control-sm"
@@ -236,12 +207,9 @@ class CrearEstudiante extends React.Component {
                   value={nombre}
                   required
                 />
-                <small className="form-text text-muted">
-                  Ingrese su nombre
-                </small>
               </div>
               <div className="form-group">
-                <label htmlFor="apellidopaterno">Apellido Paterno</label>
+                <label htmlFor="apellidopaterno">Ingrese su apellido paterno</label>
                 <input
                   type="text"
                   className="form-control form-control-sm"
@@ -252,14 +220,11 @@ class CrearEstudiante extends React.Component {
                   value={apellidopaterno}
                   required
                 />
-                <small className="form-text text-muted">
-                  Ingrese su apellido paterno
-                </small>
               </div>
             </div>
             <div className="col">
               <div className="form-group">
-                <label htmlFor="apellidomaterno">Apellido Materno</label>
+                <label htmlFor="apellidomaterno">Ingrese su apellido materno</label>
                 <input
                   type="text"
                   className="form-control form-control-sm"
@@ -270,12 +235,9 @@ class CrearEstudiante extends React.Component {
                   value={apellidomaterno}
                   required
                 />
-                <small className="form-text text-muted">
-                  Ingrese su apellido materno
-                </small>
               </div>
               <div className="form-group">
-                <label htmlFor="nacionalidad">Nacionalidad</label>
+                <label htmlFor="nacionalidad">Ingrese su nacionalidad</label>
                 <input
                   type="text"
                   className="form-control form-control-sm"
@@ -286,12 +248,9 @@ class CrearEstudiante extends React.Component {
                   value={nacionalidad}
                   required
                 />
-                <small className="form-text text-muted">
-                  Ingrese su nacionalidad
-                </small>
               </div>
               <div className="form-group">
-                <label htmlFor="idCarreras">ID Carreras</label>
+                <label htmlFor="idCarreras">Ingrese el ID de Carreras</label>
                 <input
                   type="text"
                   className="form-control form-control-sm"
@@ -302,12 +261,9 @@ class CrearEstudiante extends React.Component {
                   value={idCarreras}
                   required
                 />
-                <small className="form-text text-muted">
-                  Ingrese el ID de Carreras
-                </small>
               </div>
               <div className="form-group">
-                <label htmlFor="usuario">Usuario</label>
+                <label htmlFor="usuario">Ingrese el usuario</label>
                 <input
                   type="text"
                   className="form-control form-control-sm"
@@ -318,9 +274,6 @@ class CrearEstudiante extends React.Component {
                   value={usuario}
                   required
                 />
-                <small className="form-text text-muted">
-                  Ingrese el usuario
-                </small>
               </div>
               <div className="form-group">
                 <button type="submit" className="btn btn-success">
