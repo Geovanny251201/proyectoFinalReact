@@ -49,19 +49,19 @@ class CrearCurso  extends React.Component {
             <div style={{ display: "flex", justifyContent: "center" }} className='m-5'>
             <form id="formulario" onSubmit={this.enviarDatos} style={{ width: "300px" }}>
                 <div className="form-group">
-                    <label htmlFor="nombre">Nombre</label>
+                    <label htmlFor="nombre">Ingrese el nombre</label>
                     <input type="text" className="form-control form-control-sm" name="nombre" id="nombre" placeholder="Ingrese su nombre" onChange={this.cambioValor} value={nombre} required />
-                    <small className="form-text text-muted">Ingrese su nombre</small>
+                    
                 </div>
                 <div className="form-group">
-                    <label htmlFor="descripcion">Descripción</label>
+                    <label htmlFor="descripcion">Ingrese su descripción</label>
                     <input type="text" className="form-control form-control-sm" name="descripcion" id="descripcion" placeholder="Ingrese su descripción" onChange={this.cambioValor} value={descripcion} required />
-                    <small className="form-text text-muted">Ingrese su descripción</small>
+                    
                 </div>
                 <div className="form-group">
-                    <label htmlFor="tiempo">Tiempo</label>
+                    <label htmlFor="tiempo">Ingrese el tiempo</label>
                     <input type="text" className="form-control form-control-sm" name="tiempo" id="tiempo" placeholder="Ingrese el tiempo" onChange={this.cambioValor} value={tiempo} required />
-                    <small className="form-text text-muted">Ingrese el tiempo</small>
+                    
                 </div>                          
                 <div className="form-group">
                     
