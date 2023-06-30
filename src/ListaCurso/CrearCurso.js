@@ -65,7 +65,7 @@ class CrearCurso  extends React.Component {
                 </div>                          
                 <div className="form-group">
                     
-                    <button type="submit" className="btn btn-success">Guardar</button>
+                    <button type="submit" className="btn btn-success btn2">Guardar</button>
                 </div>
             </form>
         </div>

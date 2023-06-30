@@ -64,11 +64,15 @@ nav a, ul{
   margin: 0 20px ;
 }
 
+.table-responsive td{
+  max-height: 40px;
+}
+
 .form-group{
   color-scheme: dark;
 }
 
-.btn{
+.btn2{
   margin: 30px 0 0 0;
 }
 

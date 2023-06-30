@@ -276,7 +276,7 @@ class CrearEstudiante extends React.Component {
                 />
               </div>
               <div className="form-group">
-                <button type="submit" className="btn btn-success">
+                <button type="submit" className="btn btn-success btn2">
                   Guardar
                 </button>
               </div>
